@@ -18,7 +18,7 @@ compileSdk = "36"
 targetSdk = "36"
 minSdk = "24"
 jdk = "17"
-namespace = "com.arcus"
+namespace = "com.abdurrahmanbulut.arcus"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
