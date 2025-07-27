@@ -3,7 +3,7 @@
 
 ## Overview
 
-This is a starting point of any compose project. It includes my compose library named "Sherlock". 
+This is a starting point of any compose project 
 
 ## Getting Started
 
@@ -24,11 +24,11 @@ This is a starting point of any compose project. It includes my compose library 
 
 ## Code Formatting
 
-To maintain a clean and consistent codebase, I use [ktlint](https://ktlint.github.io/) for Kotlin code formatting. Follow the instructions below to format your code before committing:
+To maintain a clean and consistent codebase, I use [ktlinter](https://ktlint.github.io/) for Kotlin code formatting. Follow the instructions below to format your code before committing:
 
 ### Formatting Code
 
 To automatically format your code, use the following Gradle command:
 
 ```bash
-./gradlew ktlintFormat
+./gradlew formatkotlin
