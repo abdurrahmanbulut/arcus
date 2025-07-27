@@ -1,4 +1,4 @@
-package com.arcus.core.ui.theme
+package com.arcus.core.theme
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

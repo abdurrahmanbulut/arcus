@@ -1,8 +1,8 @@
 package com.arcus.di
 
-import com.arcus.network.api.SplashApi
-import com.arcus.network.provideLoggingInterceptor
-import com.arcus.network.provideOkHttpClient
+import com.arcus.core.network.api.SplashApi
+import com.arcus.core.network.provideLoggingInterceptor
+import com.arcus.core.network.provideOkHttpClient
 import okhttp3.OkHttpClient
 import org.koin.dsl.module
 import retrofit2.Retrofit

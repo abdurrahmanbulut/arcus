@@ -1,4 +1,4 @@
-package com.arcus.network
+package com.arcus.core.network
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

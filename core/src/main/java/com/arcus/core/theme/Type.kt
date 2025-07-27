@@ -1,4 +1,4 @@
-package com.arcus.core.ui.theme
+package com.arcus.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

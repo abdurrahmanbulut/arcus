@@ -14,7 +14,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.arcus.app.navigation.AppNavigation
 import com.arcus.core.navigation.Navigator
-import com.arcus.core.ui.theme.ArcusTheme
+import com.arcus.core.theme.ArcusTheme
 
 val LocalNavigator = staticCompositionLocalOf<Navigator> { error("No Navigator provided") }
 internal val LocalMainActivity = compositionLocalOf<MainActivity> { error("need CoreActivity") }

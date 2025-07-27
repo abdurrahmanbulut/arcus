@@ -1,4 +1,4 @@
-package com.arcus.network
+package com.arcus.core.network
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch

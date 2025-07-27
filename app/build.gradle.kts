@@ -50,25 +50,12 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.navigation)
-    implementation(libs.koin.android)
-    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin)
+    implementation(libs.koin.compose)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
     implementation(libs.lottie)
     implementation(libs.androidx.constraintlayout)
-
     implementation(libs.datastore)
-
-    val composeBom = platform(libs.androidx.compose.bom)
-    implementation(composeBom)
-    androidTestImplementation(composeBom)
-
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
 }

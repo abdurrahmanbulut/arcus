@@ -11,12 +11,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.arcus.app.LocalNavigator
 import com.arcus.app.navigation.LocalInsets
-import com.arcus.features.main.MainScreenVM
+import com.arcus.core.constants.SecureStorage
 import org.koin.androidx.compose.koinViewModel
+import org.koin.compose.koinInject
 
 @Composable
-fun HomeScreen(mainScreenVM: MainScreenVM) {
+fun HomeScreen(storage: SecureStorage = koinInject()) {
     val viewModel: HomeScreenVM = koinViewModel()
+
     val navigator = LocalNavigator.current
     val insets = LocalInsets.current
     Box(

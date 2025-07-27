@@ -9,8 +9,8 @@ import androidx.compose.runtime.compositionLocalOf
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.arcus.app.navigation.screen.Screen
+import com.arcus.core.constants.InsetsViewModel
 import com.arcus.core.navigation.Navigation
-import com.arcus.features.InsetsViewModel
 import org.koin.androidx.compose.koinViewModel
 
 val LocalInsets =

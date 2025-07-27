@@ -1,4 +1,4 @@
-package com.arcus.network.api
+package com.arcus.core.network.api
 
 import retrofit2.http.GET
 import retrofit2.http.Query

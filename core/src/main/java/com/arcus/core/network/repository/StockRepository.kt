@@ -1,8 +1,8 @@
-package com.arcus.network.repository
+package com.arcus.core.network.repository
 
-import com.arcus.network.ApiCall
-import com.arcus.network.NetworkService
-import com.arcus.network.api.StockApi
+import com.arcus.core.network.ApiCall
+import com.arcus.core.network.NetworkService
+import com.arcus.core.network.api.StockApi
 import kotlinx.coroutines.CoroutineScope
 
 class StockRepository(

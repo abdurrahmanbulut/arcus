@@ -1,4 +1,4 @@
-package com.arcus.features
+package com.arcus.core.constants
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

@@ -60,7 +60,7 @@ fun NavGraphBuilder.mainScreen(
 }
 
 fun NavGraphBuilder.mainNavGraph(mainScreenVM: MainScreenVM) {
-    mainScreen(Screen.Main.Home.route) { HomeScreen(mainScreenVM) }
+    mainScreen(Screen.Main.Home.route) { HomeScreen() }
     mainScreen(Screen.Main.Profile.route) { ProfileScreen() }
     mainScreen(Screen.Main.Settings.route) { SettingsScreen() }
     mainScreen(Screen.Main.Search.route) { SearchScreen() }

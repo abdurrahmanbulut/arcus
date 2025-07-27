@@ -1,4 +1,4 @@
-package com.arcus.model
+package com.arcus.core.model
 
 data class CatFact(
     val fact: String,

@@ -1,7 +1,7 @@
-package com.arcus.network.api
+package com.arcus.core.network.api
 
-import com.arcus.model.Breeds
-import com.arcus.model.CatFact
+import com.arcus.core.model.Breeds
+import com.arcus.core.model.CatFact
 import retrofit2.http.GET
 
 interface SplashApi {

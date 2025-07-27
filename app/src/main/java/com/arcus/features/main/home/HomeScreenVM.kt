@@ -6,11 +6,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.arcus.model.CatFact
-import com.arcus.network.repository.SplashRepository
+import com.arcus.core.constants.SecureStorage
+import com.arcus.core.model.CatFact
+import com.arcus.core.network.repository.SplashRepository
 
 class HomeScreenVM(
     private val splashRepository: SplashRepository,
+    private val storage: SecureStorage,
 ) : ViewModel() {
     var test by mutableStateOf("Home Screen")
 
