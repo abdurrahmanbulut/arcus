@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.abdurrahmanbulut.composeAppBase"
+    namespace = "com.abdurrahmanbulut.arcus"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.abdurrahmanbulut.composeAppBase"
+        applicationId = "com.abdurrahmanbulut.arcus"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -17,7 +17,7 @@ This is a starting point of any compose project. It includes my compose library 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/abdurrahmambulut/compose-app-base.git
+    git clone https://github.com/abdurrahmambulut/arcus.git
     ```
 2. Open the project in Android Studio.
 3. Sync the project with Gradle files.
