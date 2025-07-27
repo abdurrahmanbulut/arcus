@@ -112,7 +112,7 @@ fun MainScreen() {
         HorizontalDivider(
             modifier = Modifier.fillMaxWidth(),
             thickness = 1.dp,
-            color = colors.grey100
+            color = colors.divider
         )
         LaunchedEffect(navController.currentBackStackEntry) {
             println("navController.currentBackStackEntry")
