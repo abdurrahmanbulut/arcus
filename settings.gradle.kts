@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Arcus"
 include(":app")
+include(":core")

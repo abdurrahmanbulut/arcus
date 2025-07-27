@@ -1,45 +1,27 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
-    kotlin("kapt")
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlinter)
 }
 
 android {
-
-    namespace = libs.versions.namespace.get()
+    namespace = libs.versions.namespace.get() + ".network"
     compileSdk = libs.versions.compileSdk.get().toInt()
 //    buildToolsVersion = libs.versions.buildToolsVersion.get()
     defaultConfig.minSdk = libs.versions.minSdk.get().toInt()
-    defaultConfig.versionCode = 1
-    defaultConfig.versionName = "1.0"
     defaultConfig.targetSdk = libs.versions.targetSdk.get().toInt()
     kotlin.jvmToolchain(libs.versions.jdk.get().toInt())
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro",
-            )
-        }
-    }
-    buildFeatures {
-        compose = true
-    }
-
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
-    }
 }
 
 dependencies {
-    implementation(fileTree("../libs"))
-    implementation(project(":core"))
+
+//    compileOnly(fileTree("../libs"))
+//    compileOnly(project(":model"))
+//    compileOnly(project(":common"))
+//    implementation(libs.bundles.network)
+//    implementation(libs.bundles.lifecycle)
+//    implementation(libs.bundles.paging)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -49,22 +31,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.navigation)
-    implementation(libs.koin.android)
-    implementation(libs.koin.androidx.compose)
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
-    implementation(libs.logging.interceptor)
-    implementation(libs.lottie)
-    implementation(libs.androidx.constraintlayout)
-
-    implementation(libs.datastore)
-
-    val composeBom = platform(libs.androidx.compose.bom)
-    implementation(composeBom)
-    androidTestImplementation(composeBom)
-
     testImplementation(libs.junit)
+    implementation(libs.navigation)
+    implementation(libs.converter.gson)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
