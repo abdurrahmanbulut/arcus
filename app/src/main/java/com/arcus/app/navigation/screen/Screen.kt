@@ -10,7 +10,7 @@ sealed class Screen(
 
         data object Profile : Screen("profile")
 
-        data object Settings : Screen("settings")
+        data object Inbox : Screen("inbox")
 
         data object Search : Screen("search")
     }

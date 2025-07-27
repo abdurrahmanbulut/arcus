@@ -7,12 +7,14 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 
-var colors by mutableStateOf(Colors())
+var colors by mutableStateOf(ColorsLight())
 
 @Immutable
 @Stable
 open class Colors {
     val transparent = Color(0x00000000)
+    open val background1: Color = transparent
+    open val navbar: Color = transparent
     open val orange1: Color = transparent
     open val orange2: Color = transparent
     open val orange3: Color = transparent
@@ -40,6 +42,8 @@ open class Colors {
 }
 
 class ColorsLight : Colors() {
+    override val background1 = Color(0xFF121417)
+    override val navbar = Color(0xFF1C2126)
     override val orange1 = Color(0xFFF68B1F)
     override val orange2 = Color(0xFFFABF83)
     override val orange3 = Color(0xFFFEF2E6)

@@ -49,9 +49,7 @@ class MainActivity : ComponentActivity() {
                     LocalNavigator provides navigator,
                     LocalNavHostController provides navHostController,
                 ) {
-                    Surface {
-                        AppNavigation(navHostController)
-                    }
+                    AppNavigation(navHostController)
                 }
             }
         }

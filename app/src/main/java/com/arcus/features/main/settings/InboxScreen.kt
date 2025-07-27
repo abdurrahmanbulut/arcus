@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import com.arcus.app.navigator
 
 @Composable
-fun SettingsScreen() {
+fun InboxScreen() {
     val navigator = navigator()
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Content()
